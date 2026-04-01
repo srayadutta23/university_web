@@ -6,10 +6,46 @@
 </head>
 <body>
 
-<h1>Top 10 US Universities</h1>
+<h1>Find Top US Universities 🎓</h1>
 
-<input type="text" id="search" placeholder="Search university...">
+<!-- SEARCH -->
+<input type="text" id="search" placeholder="Search university..." onkeyup="applyFilters()">
 
+<!-- FILTERS -->
+<div class="filters">
+
+  <!-- Rank Filter -->
+  <select id="rankFilter" onchange="applyFilters()">
+    <option value="">All Ranks</option>
+    <option value="5">Top 5</option>
+    <option value="10">Top 10</option>
+  </select>
+
+  <!-- State Filter -->
+  <select id="stateFilter" onchange="applyFilters()">
+    <option value="">All States</option>
+    <option value="California">California</option>
+    <option value="Massachusetts">Massachusetts</option>
+    <option value="New York">New York</option>
+  </select>
+
+  <!-- Type Filter -->
+  <select id="typeFilter" onchange="applyFilters()">
+    <option value="">All Types</option>
+    <option value="Private">Private</option>
+    <option value="Public">Public</option>
+  </select>
+
+  <!-- Sort -->
+  <select id="sortRank" onchange="applyFilters()">
+    <option value="">Sort by Rank</option>
+    <option value="asc">Low → High</option>
+    <option value="desc">High → Low</option>
+  </select>
+
+</div>
+
+<!-- RESULTS -->
 <div id="results"></div>
 
 <script src="script.js"></script>
