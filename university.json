@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Harvard University",
+    "rank": 1,
+    "state": "Massachusetts",
+    "acceptance_rate": "4%",
+    "type": "Private"
+  },
+  {
+    "name": "Stanford University",
+    "rank": 2,
+    "state": "California",
+    "acceptance_rate": "5%",
+    "type": "Private"
+  }
+]
